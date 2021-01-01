@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="practice.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
+
+        <img src="data:image/png;base64,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" width="124" height="45"
+            class="d-inline-block align-top" alt="">
+        Least time travel path project
+
+    </nav>
+    <div id="container">
+        <div id="mynetwork">
+        </div>
+        <div id="container2">
+            <span id="temptext2" style="width: 100%; text-align: center; font-size: x-large">
+            </span>
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                Red link represents bus travel time : <i class="fa fa-bus" aria-hidden="true" style="color: orange"></i><br>
+                Green link represents flight travel time : <i class="fa fa-plane" aria-hidden="true" style="color: green"></i><br>
+                Click on solve to get Solution !!
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-graph">Get New Problem</button>
+        <br>
+        <button type="button" class="btn btn-success" id="solve">Solve</button>
+    </div>
+</body>
+
+</html>
